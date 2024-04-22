@@ -1,0 +1,40 @@
+namespace Liste
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            List<string> list = new List<string>();
+
+            list.Add("Jean");
+            list.Add("Luc");
+            list.Add("Béatrice");
+
+            Console.WriteLine("Liste avant modifications : ");
+            Console.WriteLine();
+            foreach (string e in list)
+            {
+                Console.WriteLine(e);
+            }
+
+            list.RemoveAt(0);
+            list.Remove("Béatrice");
+            list[0] = "Marcus";
+            Console.WriteLine();
+            Console.WriteLine("Liste après modifications : ");
+            Console.WriteLine();
+
+            foreach (string e in list)
+            {
+                Console.WriteLine(e); 
+            }
+
+
+
+        }
+
+
+    }
+    
+}
